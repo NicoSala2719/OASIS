@@ -12,7 +12,7 @@
       --blue: #260894;
       --grey-dark: #3e4452;
       --blue-light: #1a5aad;
-      --cream: #dfa564;
+      --cream: #6b6b6b;
     }
 
     * { box-sizing: border-box; }
@@ -20,8 +20,8 @@
     body {
       font-family: 'Nunito', sans-serif;
       background-color: var(--cream);
-      background-image: radial-gradient(circle at 20% 20%, #dfa564 0%, transparent 50%),
-                        radial-gradient(circle at 80% 80%, #dfa564 0%, transparent 50%);
+      background-image: radial-gradient(circle at 20% 20%, #6d6c6c 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, #646464 0%, transparent 50%);
     }
 
     .logo-font { font-family: 'Pacifico', cursive; }
@@ -465,7 +465,7 @@ const ADMIN_HASH = "e3c2f39c8a5bcf9e2f5d63d1f30a8ba6b2e1c4d7f8a9b0c1d2e3f4a5b6c7
 // ─── DEFAULT PRODUCTS ────────────────────────────────────────────
 const DEFAULT_PRODUCTS = {
   Cargadores: [
-    { name: "Cargador Original Apple (USB-C)",      price: 70000, img: "https://i.postimg.cc/25P6v5N2/simples.png" },
+    { name: "Cargador Original Apple (USB-C)",      price: 70000, img: "https://i.postimg.cc/SNyD4TLC/Whats-App-Image-2026-05-02-at-15-14-04.jpg" },
     { name: "Donitas Chocolate",    price: 4400, img: "https://i.postimg.cc/mBHxS8TR/Whats-App-Image-2026-04-20-at-08-52-18.jpg" },
     { name: "Donitas Oreo",         price: 5000, img: "https://i.postimg.cc/Cwc3N1z3/Whats-App-Image-2026-04-20-at-10-10-49.jpg" },
     { name: "Donitas Saborizadas",  price: 4500, img: "https://i.postimg.cc/5bNphzGC/Whats-App-Image-2026-04-21-at-20-11-32.jpg" }
@@ -632,7 +632,7 @@ function updateCartDrawer() {
       <div id="cart-empty">
         <div>📱</div>
         <p>Tu carrito está vacío</p>
-        <p style="font-size:0.85rem;margin-top:0.25rem">¡Agregá algo rico!</p>
+        <p style="font-size:0.85rem;margin-top:0.25rem">¡Agregá lo que te haga falta!</p>
       </div>`;
   } else {
     container.innerHTML = cart.map(item => `
